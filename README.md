@@ -1,7 +1,7 @@
 # DesafioAtom
 
 Clone o repositório:
--- git clone https://github.com/seu-usuario/nome-do-repositorio.git
+-- git clone [https://github.com/LuizaCalife/DesafioAtom]
 
 Instale as dependências:
 -- npm install
