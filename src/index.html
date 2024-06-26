@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Blog</title>
+  <link href="/dist/tailwind.css" rel="stylesheet">
+</head>
+<body class="font-sans bg-gray-light">
+  <header id="header" class="bg-primary text-white p-6">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-3xl font-bold">
+        The Blog<span class="text-secondary">.</span>
+      </h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#home" class="hover:underline">Home</a></li>
+          <li><a href="#about" class="hover:underline">Sobre</a></li>
+          <li><a href="#categories" class="hover:underline">Categorias</a></li>
+          <li><a href="#contact" class="hover:underline">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="flex items-center">
+        <input type="text" placeholder="Buscar" class="bg-detailColor text-white p-2 rounded-l-md">
+        <button class="bg-tertiary text-white p-2 rounded-r-md">Buscar</button>
+      </div>
+    </div>
+  </header>
+
+  <section id="home" class="bg-primary p-10">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+      <div class="max-w-lg mb-6 md:mb-0">
+        <h2 class="text-4xl font-bold text-tertiary mb-4">Veja o guia definitivo para conquistar seus objetivos como DEV em 2022</h2>
+        <p class="mb-4 text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique placerat hac.</p>
+        <a href="#" class="text-tertiary hover:underline font-bold flex items-center">Veja mais <span class="ml-2 text-secondary">→</span></a>
+      </div>
+      <img src="/imgs/imagemCod1.png" alt="Imagem representativa" class="w-full md:w-1/3 rounded-md">
+    </div>
+  </section>
+
+  <div class="h-1 bg-secondary"></div>
+
+  <main class="container mx-auto p-6">
+    <!-- Primeiro grid -->
+    <section id="categories" class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10 mt-20">
+      <article class="">
+        <img src="/imgs/imagem2.png" alt="Imagem de um post" class="w-full h-130 object-cover rounded-xl mb-4 transition-transform transform hover:scale-105">
+        <p class="text-black mb-6">Janeiro 04, 2022</p>
+        <h3 class="text-primary font-bold mb-6 text-3xl">Começando no ReactJS em 2022</h3>
+        <p class="text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique. Sed volutpat aenean.</p>
+      </article>
+      <article class="ml-20">
+        <p class="text-black mb-1">Janeiro 04, 2022</p>
+        <h3 class="text-primary font-bold mb-4 text-3xl">Conheça as principais técnicas para conseguir uma vaga internacional em programação</h3>
+        <p class="text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique. </p>
+        <p class="text-black mb-1 mt-10">Janeiro 04, 2022</p>
+        <h3 class="text-primary font-bold mb-4 text-3xl">Veja a evolução do Front-end na prática</h3>
+        <p class="text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nibh nibh, eu aliquam eu aliquet at, aliquam a velit.</p>
+      </article>
+    </section>
+    
+    <!-- Segundo grid -->
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-24">
+      <article class="bg-white p-6 rounded-md shadow-md transition-shadow hover:shadow-custom-heavy hover:bg-containerColor hover:text-white group animate-items">
+        <img src="/imgs/imagemSentado.png" alt="Imagem de um post" class="w-full h-130 object-cover rounded-md mb-4">
+        <p class="text-black group-hover:text-white mb-6 ">Janeiro 04, 2022</p>
+        <h3 class="text-2xl text-primary group-hover:text-white font-bold mb-4">10 dicas para conseguir a vaga desejada</h3>
+        <p class="text-black group-hover:text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique. </p>
+      </article>
+      <article class="bg-white p-6 rounded-md shadow-md transition-shadow hover:shadow-custom-heavy hover:bg-containerColor hover:text-white group animate-items">
+        <img src="/imgs/imagemCodigo.png" alt="Imagem de um post" class="w-full h-130 object-cover rounded-md mb-4">
+        <p class="text-black group-hover:text-white mb-6">Janeiro 04, 2022</p>
+        <h3 class="text-2xl text-primary group-hover:text-white font-bold mb-4">Deixe seu código mais semântico com essas dicas</h3>
+        <p class="text-black group-hover:text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique. </p>
+      </article>
+      <article class="bg-white p-6 rounded-md shadow-md transition-shadow hover:shadow-custom-heavy hover:bg-containerColor hover:text-white group animate-items">
+        <img src="/imgs/imagem5.jpg" alt="Imagem de um post" class="w-full h-130 object-cover rounded-md mb-4">
+        <p class="text-black group-hover:text-white mb-6">Janeiro 04, 2022</p>
+        <h3 class="text-2xl text-primary group-hover:text-white font-bold mb-4">Use essas dicas nas suas aplicações mobile</h3>
+        <p class="text-black group-hover:text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique. </p>
+      </article>
+    </section>
+  </main>
+  <script src="dist/index.js"></script>
+</body>
+</html>
